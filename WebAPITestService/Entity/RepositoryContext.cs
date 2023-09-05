@@ -9,7 +9,7 @@ namespace WebAPITestService.Entity
 {
     public class RepositoryContext: DbContext
     {
-        public RepositoryContext():base()
+        public RepositoryContext(DbContextOptions options):base(options)
         {
             
         }

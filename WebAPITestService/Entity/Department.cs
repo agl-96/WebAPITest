@@ -12,6 +12,7 @@ namespace WebAPITestService.Entity
     public class Department
     {
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int DeptID { get; set; }
         public string? DeptName { get; set; }
         public List<Employee> Employees { get; set; } = new List<Employee>();

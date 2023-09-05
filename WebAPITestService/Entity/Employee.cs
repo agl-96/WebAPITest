@@ -11,6 +11,7 @@ namespace WebAPITestService.Entity
     public class Employee
     {
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int EmpID { get; set; }
         public string? EmpName { get; set; }
         public string? EmpCode { get; set; }
